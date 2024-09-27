@@ -1,7 +1,7 @@
 body{
   background:  rgba(242, 230, 224, 0.8);
+  margin:0;
 }
-
 .grid-container {
     display: grid;
     column-gap: 10px;
@@ -57,11 +57,27 @@ body{
 .navigation-bar{
   display: flex;
   background-color: #be8062;
+  justify-content: center;
 }
 .navigation-bar > div {
   background-color: #be8062;
-  margin: 10px;
+  margin: 5px;
   padding: 5px;
   font-size: 17px;
 }
+.active{
+  background-color: #be8062;
+  color: rgba(26, 16, 8, 0.8);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.active:hover{
+  color: rgba(241, 189, 141, 0.8);
+}
+.logo1{
+  justify-content: right;
+}
+.text{
 
+}
