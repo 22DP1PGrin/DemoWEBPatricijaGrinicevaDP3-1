@@ -1,0 +1,83 @@
+body{
+  background:  rgba(242, 230, 224, 0.8);
+  margin:0;
+}
+.grid-container {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns:auto auto auto ;
+    background-color: #be8062;
+    margin: 0 auto;
+    width: 70%;
+    padding: 10px;
+    justify-content: center;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 3px solid rgba(73, 48, 24, 0.8);
+    padding: 15px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .grid-item:hover {
+    background-color: rgba(241, 189, 141, 0.8);
+    transform: scale(1.13);
+
+  }
+.heading{
+  font-size: 30px;
+}
+.paragraph{
+  font-size: 20px;
+  
+}
+.main_h{
+  text-align: center;
+}
+.main_paragraph{
+  font-size: 20px;
+}
+.button{
+  background-color: rgba(241, 189, 141, 0.8);
+  border: solid rgba(73, 48, 24, 0.8);
+  color: rgb(0, 0, 0);
+  padding: 10px 28px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+
+}
+.button:hover{
+  font-size: 20px;
+  color: rgba(20, 13, 7, 0.8);
+  background-color: #be8062;
+  border: rgba(73, 48, 24, 0.8);
+}
+
+.navigation-bar{
+  display: flex;
+  background-color: #be8062;
+  justify-content: center;
+}
+.navigation-bar > div {
+  background-color: #be8062;
+  margin: 5px;
+  padding: 5px;
+  font-size: 17px;
+}
+.active{
+  background-color: #be8062;
+  color: rgba(26, 16, 8, 0.8);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.active:hover{
+  color: rgba(241, 189, 141, 0.8);
+}
+.logo1{
+  justify-content: right;
+}
+.text{
+
+}
