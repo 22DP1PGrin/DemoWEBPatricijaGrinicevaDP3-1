@@ -1,65 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <!-- Iestatajam lapas kodējumu uz UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Nodrošinam lapas pielāgošanos mobilajām ierīcēm -->
     
-    <link rel="stylesheet" href="../css/Style.css">
+    <link rel="stylesheet" href="../css/Style.css"> <!-- Pievienojam ārējo CSS failu lapas stilizācijai -->
     
-    <title>DemoOnlib</title>
+    <title>DemoOnlib</title> <!-- Lapas virsraksts pārlūkprogrammā -->
+
 </head>
 
 <body>
 
-<div class="navigation-bar">
+<!-- Navigācijas josla -->
+<div class="navigation-bar" id="navigation">
     <div class="navbar">
-        <div class="logo"><img src="../Image/Logo.png" alt="Logo" width="20" height="20"></div>
-        <a class="active" href="#home">Home</a>
-        <a class="active" href="#contact">Contact</a>
-        <a class="active" href="#about">About &nbsp &nbsp</a>
-        <div class="logo"><img src="../Image/Logo.png" alt="Logo" width="20" height="20"></div>
+        <div class="logo"><img src="../Image/Logo.png" alt="Logo" width="20" height="20"></div> <!-- Logotips pa kreisi navigācijā -->
+        <a class="active" href="#home">Home</a> <!-- Saite uz sākumlapu -->
+        <a class="active" href="#contact">Contact</a> <!-- Saite uz kontaktu lapu -->
+        <a class="active" href="#about">About</a> <!-- Saite uz lapu "Par mums" -->
     </div>  
-    
-    
-    <div class="account"></div>
-        <a class="active2" href="#SigIn">Sign in</a>
-        <a class="active2" href="#LogIn">Log in &nbsp &nbsp</a>
-    </div>
-    
+    <div class="account"></div> <!-- Bloks konta pārvaldīšanai -->
+        <a class="active2" href="#SigIn">Sign in</a> <!-- Saite uz reģistrācijas lapu -->
+        <a class="active2" href="#LogIn">Log in &nbsp &nbsp </a> <!-- Saite uz pierakstīšanās lapu -->
+    </div>    
 </div>
 
+<!-- Galvenais virsraksts un ievada teksts -->
+<h1 class="main_h">Hello. This is Onlib!</h1> <!-- Galvenais virsraksts -->
+<p class="main_paragraph"><br>&nbsp A community where you can study not only famous authors and their books, but also fan works in different directions. </p> <!-- Ievada paragrāfs -->
+<p class="main_paragraph">&nbsp Sharing your own stories and fantasies is an integral part of Onlib. </p> <!-- Ievada paragrāfs -->
 
-    
-<h1 class="main_h">Welcome to the club, buddy!</h1>
-<p class="main_paragraph">&nbsp &nbsp &nbsp &nbsp This is a demo version of the future online library. Select actions:</p>
-    
+<br><br>
+
+<aside class="aside1">
+    <p>"Every book is a doorway to a new world. Open it and allow yourself to explore."</p> <!-- Citāts par grāmatām -->
+</aside>
+
+<br><br><br><br><br><br><br><br>
+
+<div class="info-container">
+    <h3 class="info">We have many genres that you can not only read but also work with!</h3> <!-- Informācija par žanriem -->
+    <div class="list-row">
+        <ul class="list-container">
+            <li>Fantasy</li>
+            <li>Mystery</li>
+            <li>Horror</li>
+            <li>Romance</li>
+            <li>True Crime</li>
+            <li>Humor</li>
+        </ul>
+        <ul class="list-container">
+            <li>Science Fiction</li>
+            <li>Action & Adventure</li>
+            <li>Thriller</li>
+            <li>Dystopian</li>
+            <li>Detective</li>
+            <li>Historical Fiction</li>
+        </ul>
+    </div>
+</div>
+
+<br><br><br><br><br>
+
+<aside class="aside2">
+    <p>"Books open up new worlds and provide inspiration that can change our lives."</p> <!-- Citāts par iedvesmu, ko sniedz grāmatas -->
+</aside>
+
+<br><br><br><br><br><br><br><br>
+
+<h2 class="hGrid">Do what you've been wanting for a long time!</h2> <!-- Aicinājums rīkoties -->
+
+<br>
+
+<!-- Grid izkārtojums ar trim blokiem -->
 <div class="grid-container">
     <div class="grid-item">
-        <h4 class="heading">Library</h4>
-        <img class="imgc" src="../Image/Book.jpg" alt="Reading books" width="300" height="200">
-        <p class = "paragraph">Read any books of any genre from any author!</p>
-        <button class="button">Read!</button>
+        <h4 class="headingGrid">Library</h4> <!-- Bloka virsraksts -->
+        <img src="../Image/Book.jpg" alt="Reading books" width="300" height="200"> <!-- Attēls ar grāmatu -->
+        <p class = "paragraphGrid">Read your favorite books of any genre by any author!</p> <!-- Bloka apraksts -->
+        <button class="button">Read!</button> <!-- Poga lasīšanai -->
     </div>
     <div class="grid-item">
-        <h4 class="heading">Published book </h4>
-        <img src="../Image/WriteBook.jpg" alt="Writing books" width="300" height="200">
-        <p class = "paragraph">Write your own stories and publish them on our website!</p>
-        <button class="button">Write!</button>
+        <h4 class="headingGrid">Published book </h4> <!-- Otrā bloka virsraksts -->
+        <img src="../Image/WriteBook.jpg" alt="Writing books" width="300" height="200"> <!-- Attēls ar grāmatas rakstīšanu -->
+        <p class = "paragraphGrid">Write your stories and publish them on our site!</p> <!-- Apraksts -->
+        <button class="button">Write!</button> <!-- Poga rakstīšanai -->
     </div>
     <div class="grid-item">
-        <h4 class="heading">Profile</h4>
-        <img src="../Image/ReadBook.jpg" alt="Saving books" width="300" height="200">
-        <p class = "paragraph">Save your favorite books as bookmarks in your profile!</p>
-        <button class="button">Profile!</button>
+        <h4 class="headingGrid">Profile</h4> <!-- Trešā bloka virsraksts -->
+        <img src="../Image/ReadBook.jpg" alt="Saving books" width="300" height="200"> <!-- Attēls ar grāmatu saglabāšanu -->
+        <p class = "paragraphGrid">Bookmark your favorite books on your profile!</p> <!-- Apraksts -->
+        <button class="button">Profile!</button> <!-- Poga profila apskatei -->
     </div>  
 </div> 
 
+<br><br><br><br><br><br>
 
-<footer>
-    <a href="#rules">Rules</a>
-    <a href="#SupportService">Support service</a>
-    <a href="#UserAgreement">User agreement</a>
-    <a href="#Copyright">Copyright</a>
-  </footer>
+<!-- Kājene ar saitēm uz dažādām lapām -->
+<footer id="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <ul class="footer-links">
+                <li><a href="#rules">Rules</a></li> <!-- Saite uz noteikumiem -->
+                <li><a href="#SupportService">Support Service</a></li> <!-- Saite uz atbalsta dienestu -->
+                <li><a href="#UserAgreement">User Agreement</a></li> <!-- Saite uz lietotāja līgumu -->
+            </ul>
+        </div>
+        <div class="footer-section">
+            <ul class="footer-links">
+                <li><a href="#Copyright">Copyright</a></li> <!-- Saite uz autortiesībām -->
+                <li><a href="#PrivacyPolicy">Privacy Policy</a></li> <!-- Saite uz privātumu -->
+                <li><a href="#TermsOfService">Terms of Service</a></li> <!-- Saite uz pakalpojumu noteikumiem -->
+            </ul>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>

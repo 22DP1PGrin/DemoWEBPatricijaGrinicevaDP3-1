@@ -1,108 +1,257 @@
 body{
-  background:url(../Image/background.jpg);
-  margin:0;
-}
-.grid-container {
-    display: grid;
-
-    column-gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    /* background-color: rgba(136, 77, 47, 0.8); */
-    margin: 0 auto;
-    width: 70%;
-    padding: 10px;
-    max-width: 1200px;
-    justify-content: center;
-  }
-  .grid-item {
-    
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 3px solid rgba(73, 48, 24, 0.8);
-    padding: 15px;
-    font-size: 30px;
-    text-align: center;
-    transition: transform 0.2s;
-    color: rgba(26, 16, 8, 0.8);
-  }
-
-  .grid-item:hover {
-    background-color: rgba(241, 189, 141, 0.8);
-    transform: scale(1.13);
-
-  }
-.heading{
-  font-size: 30px;
-}
-.paragraph{
-  font-size: 20px;
-  
-}
-.main_h{
-  text-align: center;
-  color: rgba(26, 16, 8, 0.8);
-}
-.main_paragraph{
-  font-size: 20px;
-  color: rgba(26, 16, 8, 0.8);
-}
-.button{
-  background-color: rgba(241, 189, 141, 0.8);
-  border: solid rgba(73, 48, 24, 0.8);
-  color: rgb(0, 0, 0);
-  padding: 10px 28px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-
-}
-.button:hover{
-  font-size: 20px;
-  color: rgba(20, 13, 7, 0.8);
-  background-color: #be8062;
-  border: rgba(73, 48, 24, 0.8);
+  background:url(../Image/background.jpg); /* Iestatām fona attēlu */
+  margin:0; /* Noņemam noklusēto malu */
 }
 
+/* Navigācijas josla */
 .navigation-bar{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #be8062;
+  display: flex; /* Flexbox izkārtojums navigācijai */
+  justify-content: space-between; /* Atstarpes starp navigācijas elementiem */
+  align-items: center; /* Elementu vertikāla izlīdzināšana */
+  background-image: linear-gradient(#704733,#c58667,#f5b89a); /* Fona krāsa ar gradientu */
 }
+
 .navigation-bar > div {
-  background-color: #be8062;
-  margin: 5px;
-  padding: 5px;
-  font-size: 17px;
+  margin: 5px; /* Malas ap katru navigācijas elementu */
+  padding: 5px; /* Atstarpe iekšpusē */
 }
+
 .navbar{
-  display: flex;  
-  flex-grow: 1;
+  display: flex; /* Flexbox izkārtojums */
+  align-items: center; /* Elementu vertikāla izlīdzināšana */
+  flex-grow: 1; /* Izplešas, lai aizpildītu vietu */
+  transition: transform 0.3s ease; /* Pārejas efekts uz transformācijām */
 }
+
 .account{
-  display: flex; 
-  margin-left: auto;
+  display: flex; /* Flexbox izkārtojums konta sadaļai */
+  margin-left: auto; /* Novietojam konta bloku pa labi */
 }
+
 .active{
-  background-color: #be8062;
-  color: rgba(26, 16, 8, 0.8);
-  text-align: center;
-  text-decoration: none;
-  margin-left: 10px;
+  color: rgba(26, 16, 8, 0.8); /*Teksta krāsa */
+  text-align: center; /* Centrējam tekstu */
+  text-decoration: none; /* Noņemam noklusēto teksta apakšsvītrojumu */
+  margin-left: 10px; /* Atstarpes starp saitēm */
+  font-size: 17px; /* Fonta izmērs navigācijas tekstam */
 }
+
 .active2{
-  background-color: #be8062;
-  color: rgba(26, 16, 8, 0.8);
-  text-align: center;
-  text-decoration: none;
-  margin-left: 10px;
-  display: inline-block;
-  justify-content: left;
-
-}
-.active:hover{
-  color: rgba(241, 189, 141, 0.8);
-}
-.active2:hover{
-  color: rgba(241, 189, 141, 0.8);
+  color: rgba(26, 16, 8, 0.8); /*Teksta krāsa */
+  text-align: center; /* Centrējam tekstu */
+  text-decoration: none; /* Noņemam noklusēto teksta apakšsvītrojumu */
+  margin-left: 10px; /* Atstarpes starp saitēm */
+  display: inline-block; /* Rindas bloks, lai pareizi rādītu atstarpi */
+  justify-content: left; /* Teksta novietošana pa kreisi */
+  font-size: 17px; /* Fonta izmērs navigācijas tekstam */
 }
 
+.active:hover {
+  color: rgba(241, 189, 141, 0.8); /* Teksta krāsa, kad pele tiek pārvilkta */
+  transform: scale(1.2); /* Saites mērogošana uz augšu, kad pele ir virs tām */
+}
+
+.active2:hover {
+  color: rgba(241, 189, 141, 0.8); /* Teksta krāsa, kad pele tiek pārvilkta */
+  transform: scale(1.2); /* Saites mērogošana uz augšu, kad pele ir virs tām */
+}
+
+/* Galvenais virsraksts un paragrāfi */
+.main_h{
+  text-align: center; /* Centrējam galveno virsrakstu */
+  font-size: 35px; /* Fonta izmērs galvenajam virsrakstam */
+  color: rgba(26, 16, 8, 0.8); /* Teksta krāsa */
+}
+
+.main_paragraph{
+  text-align: center; /* Centrējam tekstu */
+  font-size: 22px; /* Iestatām fonta izmēru paragrāfam */
+  color: rgba(26, 16, 8, 0.8); /* Teksta krāsa */
+  animation: gradientText 4s ease-in-out infinite; /* Gradienta teksta animācija */
+}
+
+@keyframes gradientText {
+  0% {
+    color: rgba(26, 16, 8, 0.8); /* Sākotnējā krāsa */
+  }
+  25% {
+    color: #704733; /* Pirmā pāreja krāsā */
+  }
+  50% {
+    color: #c58667; /* Otrā pāreja krāsā */
+  }
+  75% {
+    color: #704733; /* Trešā pāreja krāsā */
+  }
+  100% {
+    color: rgba(88, 35, 0, 0.8); /* Beigu krāsa */
+  }
+}
+
+/* Papildu informācija */
+.container {
+  display: flex; /* Izmantojam flexbox konteineram */
+  flex-direction: column; /* Novietojam elementus kolonnā */
+  margin: 20px; /* Atstarpe visam konteineram */
+}
+
+.info-container {
+  text-align: center; /* Centrējam tekstu */
+  color: rgba(26, 16, 8, 0.8); /* Teksta krāsa */
+  font-size: 20px; /* Fonta izmērs */
+}
+
+.list-row {
+  display: flex; /* Izmantojam flexbox, lai izvietotu sarakstus vienā rindā */
+  justify-content: center; /* Centrējam sarakstus */
+  margin-top: 10px; /* Atstarpe virs saraksta */
+}
+
+.list-container {
+  list-style-type: none; /* Uzdodam, lai nav saraksta marķējuma */
+  padding: 0; /* Uzdodam, lai nebūtu iekšējā atstarpes */
+  margin: 0 10px; /* Atstarpe starp sarakstiem */
+}
+
+.list-container li {
+  margin: 5px 0; /* Atstarpe starp saraksta elementiem */
+  font-size: 18px; /* Fonta izmērs saraksta elementiem */
+  animation: gradientText 4s ease-in-out infinite; /* Gradienta teksta animācija */
+}
+
+/* Aside */
+aside {
+  width: 30%; /* Fiksēta platuma uzstādīšana aside */
+  background-color: #c58667; /* Fona krāsa aside */
+  color: rgba(26, 16, 8, 0.8); /* Teksta krāsa */
+  text-align: center; /* Teksta centrēšana */
+  border-radius: 8px; /* Stūra noapaļošana */
+  font-size: 18px; /* Fonta izmērs */
+  padding: 15px; /* Iekšējā atstarpe aside */
+  margin-bottom: 20px; /* Apakšējā atstarpe, lai atdalītu */
+}
+.aside1{
+  float: right; /* Novieto aside1 pa labi */
+}
+.aside2{
+  float: left; /* Novieto aside2 pa kreisi */
+}
+
+@media (max-width: 768px) {
+  aside {
+    width: 100%; /* Mazajiem ekrāniem aside aizņem visu platumu */
+    float: none; /* Noņemam peldēšanu (float) */
+    margin: 10px 0; /* Atstarpe augšā un apakšā */
+  }
+}
+
+/* Kartes */
+.hGrid{
+  color:rgba(26, 16, 8, 0.8); /* Teksta krāsa */
+  text-align: center; /* Teksta centrēšana */
+}
+
+.grid-container {
+    display: grid; /* Izmantojam grid izkārtojumu elementiem */
+    column-gap: 10px; /* Kolonnu atstarpes */
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); /* Automātiski aizpilda kolonnu */
+    margin: 0 auto; /* Centrējam gridu horizontāli */
+    width: 70%; /* Iestatām platumu uz 70% */
+    padding: 10px; /* Iekšējā atstarpe */
+    max-width: 1200px; /* Maksimālais platums */
+    justify-content: center; /* Centrējam saturu gridā */
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8); /* Fona krāsa */
+    border: 3px solid rgba(73, 48, 24, 0.8); /* Robežas krāsa un biezums */
+    padding: 15px; /* Iekšējā atstarpe */
+    font-size: 30px; /* Fonta izmērs */
+    text-align: center; /* Teksta centrēšana */
+    transition: transform 0.2s; /* Animācija, kad tiek pārvietots elements */
+    color: rgba(26, 16, 8, 0.8); /* Teksta krāsa */
+}
+  
+.headingGrid{
+    font-size: 30px; /* Fonta izmērs */
+}
+  
+.paragraphGrid{
+    font-size: 20px; /* Fonta izmērs */
+}
+
+.button {
+  background-color: rgba(241, 189, 141, 0.8); /* Pogas fona krāsa */
+  border: solid rgba(73, 48, 24, 0.8); /* Pogas apmale */
+  color: rgb(0, 0, 0); /* Teksta krāsa */
+  padding: 10px 28px; /* Iekšējās atstarpes ap pogu */
+  text-align: center; /* Teksta centrēšana */
+  text-decoration: none; /* Bez teksta dekorācijas */
+  font-size: 16px; /* Fonta izmērs */
+  transition: all 0.3s ease; /* Pārejas efekts visiem stiliem */
+}
+
+.grid-item:hover {
+    background-color: rgba(241, 189, 141, 0.8); /* Fona krāsa, kad pele tiek pārvilkta pār elementu */
+    transform: scale(1.13); /* Palielinām elementu, kad pele tiek pārvilkta */
+}
+
+.button:hover {
+    font-size: 20px; /* Mainām fonta izmēru, kad pele tiek pārvilkta */
+    color: rgba(20, 13, 7, 0.8); /* Teksta krāsa, kad pele tiek pārvilkta */
+    background-color: #be8062; /* Fona krāsa, kad pele tiek pārvilkta */
+    border: rgba(73, 48, 24, 0.8); /* Robeža, kad pele tiek pārvilkta */
+    animation: pulse 1s infinite; /* Pārnesto efektu animācija, kad peles rādītājs atrodas uz pogas */
+}
+
+@keyframes pulse { /* Animācija */
+    0% {
+        transform: scale(1); /* Sākuma stāvoklis (normāls izmērs) */
+        box-shadow: 0 0 5px rgba(155, 100, 51, 0.8); /* Sākotnējā ēna ap objektu */
+    }
+    50% {
+        transform: scale(1.1); /* Mērogošana par 10% vidū animācijā */
+        box-shadow: 0 0 15px rgba(155, 100, 51, 0.8); /* Lielāka ēna vidū animācijā */
+    }
+    100% {
+        transform: scale(1); /* Beigu stāvoklis (normāls izmērs) */
+        box-shadow: 0 0 5px rgba(155, 100, 51, 0.8); /* Beigu ēna ap objektu */
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center; /* Teksta centrēšana */
+    background-image: linear-gradient(#f5b89a,#c58667,#704733); /* Fona attēla gradienta iestatījums */
+    justify-content: space-around; /* Telpas starp sadaļām */
+    padding: 15px; /* Atstarpe ap konteineru */
+}
+
+.footer-container {
+    display: flex; /* Flexbox izkārtojums */
+    justify-content: center; /* Centrējam kolonnas */
+}
+
+.footer-section {
+    margin: 0 30px; /* Atstarpe starp sadaļām */
+}
+
+.footer-links {
+    list-style: none; /* Noņemam saraksta marķierus */
+}
+
+.footer-links li {
+    margin: 5px 0; /* Atstarpe starp saraksta elementiem */
+}
+
+.footer-links a {
+    color: rgba(20, 13, 7, 0.8); /* Saites teksta krāsa */
+    text-decoration: none; /* Noņemam apakšsvītrojumu */
+    transition: transform 0.3s ease; /* Gluda pāreja transformācijai */
+    display: inline-block; /* Nodrošinām, ka mērogošana darbojas pareizi */
+}
+
+.footer-links a:hover {
+    color: rgba(241, 189, 141, 0.8); /* Teksta krāsa saitēm, kad pele tiek pārvilkta */
+    transform: scale(1.2); /* Saites mērogošana uz augšu, kad pele ir virs tām */
+}
