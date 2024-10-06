@@ -12,8 +12,8 @@ body{
 }
 
 .navigation-bar > div {
-  margin: 5px; /* Malas ap katru navigācijas elementu */
-  padding: 5px; /* Atstarpe iekšpusē */
+  margin: 2px; /* Malas ap katru navigācijas elementu */
+  padding: 2px; /* Atstarpe iekšpusē */
 }
 
 .navbar{
@@ -26,6 +26,27 @@ body{
 .account{
   display: flex; /* Flexbox izkārtojums konta sadaļai */
   margin-left: auto; /* Novietojam konta bloku pa labi */
+}
+
+.dropdown-content {
+  display: none; /* Paslēpt nolaižamo saturu pēc noklusējuma */
+  position: absolute; /* Absolūta pozīcija, lai nolaižamais saturs tiktu parādīts virs citiem elementiem */
+  background-color: #c58667; /* Fona krāsa nolaižamajam saturam */
+  min-width: 120px; /* Minimālais platums nolaižamajam saturam */
+}
+
+.dropdown-content a {
+  color: rgba(26, 16, 8, 0.8); /* Saite teksta krāsa */
+  padding: 10px 10px; /* Iekšējās atstarpes ap saiti */
+  text-decoration: none; /* Noņemam noklusēto apakšsvītrojumu */
+  display: block; /* Iestatām saites kā bloku, lai aizpildītu visu platumu */
+}
+.dropdown-content a:hover {
+  background-color: #f5b89a; /* Fona krāsa, kad pele ir virs saites */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Parādām nolaižamo saturu, kad pele ir virs nolaižamā saraksta */
 }
 
 .active{
@@ -129,6 +150,7 @@ aside {
   font-size: 18px; /* Fonta izmērs */
   padding: 15px; /* Iekšējā atstarpe aside */
   margin-bottom: 20px; /* Apakšējā atstarpe, lai atdalītu */
+  box-sizing: border-box; /* Ieskaitām atstarpes un robežas kopējā platumā */
 }
 .aside1{
   float: right; /* Novieto aside1 pa labi */
@@ -142,6 +164,7 @@ aside {
     width: 100%; /* Mazajiem ekrāniem aside aizņem visu platumu */
     float: none; /* Noņemam peldēšanu (float) */
     margin: 10px 0; /* Atstarpe augšā un apakšā */
+    box-sizing: border-box; /* Pārliecināmies, ka atstarpes un robežas tiek iekļautas platumā */
   }
 }
 
@@ -163,7 +186,8 @@ aside {
 }
 
 .grid-item {
-    background-color: rgba(255, 255, 255, 0.8); /* Fona krāsa */
+    /* background-color: rgba(255, 255, 255, 0.8); Fona krāsa */
+    background-image: linear-gradient(#e9a787,rgba(245, 213, 176, 0.8),rgba(255, 255, 255, 0.8)); /* Fona krāsa ar gradientu */
     border: 3px solid rgba(73, 48, 24, 0.8); /* Robežas krāsa un biezums */
     padding: 15px; /* Iekšējā atstarpe */
     font-size: 30px; /* Fonta izmērs */
@@ -171,7 +195,7 @@ aside {
     transition: transform 0.2s; /* Animācija, kad tiek pārvietots elements */
     color: rgba(26, 16, 8, 0.8); /* Teksta krāsa */
 }
-  
+
 .headingGrid{
     font-size: 30px; /* Fonta izmērs */
 }
@@ -181,9 +205,9 @@ aside {
 }
 
 .button {
-  background-color: rgba(241, 189, 141, 0.8); /* Pogas fona krāsa */
+  background-color: #e6beab; /* Pogas fona krāsa */
   border: solid rgba(73, 48, 24, 0.8); /* Pogas apmale */
-  color: rgb(0, 0, 0); /* Teksta krāsa */
+  color: rgba(26, 16, 8, 0.8); /* Teksta krāsa */
   padding: 10px 28px; /* Iekšējās atstarpes ap pogu */
   text-align: center; /* Teksta centrēšana */
   text-decoration: none; /* Bez teksta dekorācijas */
@@ -192,14 +216,15 @@ aside {
 }
 
 .grid-item:hover {
-    background-color: rgba(241, 189, 141, 0.8); /* Fona krāsa, kad pele tiek pārvilkta pār elementu */
-    transform: scale(1.13); /* Palielinām elementu, kad pele tiek pārvilkta */
+  background-image: none; /* Gradientu noņemšana */
+  background-color: rgba(245, 213, 176, 0.8); /* Fona krāsa, kad pele tiek pārvilkta pār elementu */
+  transform: scale(1.13); /* Palielinām elementu, kad pele tiek pārvilkta */
 }
 
 .button:hover {
     font-size: 20px; /* Mainām fonta izmēru, kad pele tiek pārvilkta */
     color: rgba(20, 13, 7, 0.8); /* Teksta krāsa, kad pele tiek pārvilkta */
-    background-color: #be8062; /* Fona krāsa, kad pele tiek pārvilkta */
+    background-color: #c58667; /* Fona krāsa, kad pele tiek pārvilkta */
     border: rgba(73, 48, 24, 0.8); /* Robeža, kad pele tiek pārvilkta */
     animation: pulse 1s infinite; /* Pārnesto efektu animācija, kad peles rādītājs atrodas uz pogas */
 }
@@ -225,6 +250,7 @@ footer {
     background-image: linear-gradient(#f5b89a,#c58667,#704733); /* Fona attēla gradienta iestatījums */
     justify-content: space-around; /* Telpas starp sadaļām */
     padding: 15px; /* Atstarpe ap konteineru */
+    max-width: 100%;
 }
 
 .footer-container {

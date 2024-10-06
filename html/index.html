@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Nodrošinam lapas pielāgošanos mobilajām ierīcēm -->
     
     <link rel="stylesheet" href="../css/Style.css"> <!-- Pievienojam ārējo CSS failu lapas stilizācijai -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- FontAwesome -->
     
     <title>DemoOnlib</title> <!-- Lapas virsraksts pārlūkprogrammā -->
 
@@ -15,14 +16,24 @@
 <!-- Navigācijas josla -->
 <div class="navigation-bar" id="navigation">
     <div class="navbar">
-        <div class="logo"><img src="../Image/Logo.png" alt="Logo" width="20" height="20"></div> <!-- Logotips pa kreisi navigācijā -->
-        <a class="active" href="#home">Home</a> <!-- Saite uz sākumlapu -->
-        <a class="active" href="#contact">Contact</a> <!-- Saite uz kontaktu lapu -->
-        <a class="active" href="#about">About</a> <!-- Saite uz lapu "Par mums" -->
+        <p>&nbsp&nbsp</p>
+        <div class="logo"><img src="../Image/Logo.png" alt="Logo" width="25" height="25"></div> <!-- Logotips pa kreisi navigācijā -->
+        <a class="active" href="#home"><i style="font-size:17px" class="fa">&#xf015;</i> Home</a> <!-- Saite uz kontaktu lapu -->
+        <div class="dropdown"> <!-- Izveidojam nolaižamo sarakstu -->
+            <p class="active"><i style="font: size 14px" class="fa">&#xf013;</i> Service</p> <!-- Aktīvā saite, kas parāda nolaižamā saraksta nosaukumu -->
+            <div class="dropdown-content"> <!-- Nolaižamā satura konteiners -->
+                <a href="#libraryAccess">Library access</a> <!-- Saite uz bibliotēkas piekļuvi -->
+                <a href="#userAccounts">User accounts</a> <!-- Saite uz lietotāju kontiem -->
+                <a href="#Functionality">Functionality</a> <!-- Saite uz funkcionalitāti -->
+                <a href="#Recommendations">Recommendations</a> <!-- Saite uz ieteikumiem -->
+            </div>
+        </div>
+        
+        <a class="active" href="#contact"><i style="font-size:14px" class="fa">&#xf0e0;</i> Contact</a> <!-- Saite uz lapu "Par mums" -->
     </div>  
     <div class="account"></div> <!-- Bloks konta pārvaldīšanai -->
-        <a class="active2" href="#SigIn">Sign in</a> <!-- Saite uz reģistrācijas lapu -->
-        <a class="active2" href="#LogIn">Log in &nbsp &nbsp </a> <!-- Saite uz pierakstīšanās lapu -->
+        <a class="active2" href="#SigIn"><i style="font-size:14px" class="fa">&#xf2bd;</i> Sign in</a> <!-- Saite uz reģistrācijas lapu -->
+        <a class="active2" href="#LogIn"> <i style="font-size:14px" class="fa">&#xf2be;</i> Log in &nbsp &nbsp </a> <!-- Saite uz pierakstīšanās lapu -->
     </div>    
 </div>
 
@@ -103,7 +114,7 @@
         <div class="footer-section">
             <ul class="footer-links">
                 <li><a href="#rules">Rules</a></li> <!-- Saite uz noteikumiem -->
-                <li><a href="#SupportService">Support Service</a></li> <!-- Saite uz atbalsta dienestu -->
+                <li><a href="#FAQ">FAQ</a></li> <!-- Saite uz atbalsta dienestu -->
                 <li><a href="#UserAgreement">User Agreement</a></li> <!-- Saite uz lietotāja līgumu -->
             </ul>
         </div>
