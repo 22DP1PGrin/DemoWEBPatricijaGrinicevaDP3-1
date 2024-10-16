@@ -1,8 +1,15 @@
 body{
   background:url(../Image/background.jpg); /* Iestatām fona attēlu */
   margin:0; /* Noņemam noklusēto malu */
+
 }
 
+/* Dzeš attelus kād ekrana izmers <= 500 */
+@media (max-width: 500px) {
+  .fa {
+   display: none !important; /* Inore citus noteikumus */
+  }
+}
 /* Navigācijas josla */
 .navigation-bar{
   display: flex; /* Flexbox izkārtojums navigācijai */
@@ -76,6 +83,7 @@ body{
   color: rgba(241, 189, 141, 0.8); /* Teksta krāsa, kad pele tiek pārvilkta */
   transform: scale(1.2); /* Saites mērogošana uz augšu, kad pele ir virs tām */
 }
+
 
 /* Galvenais virsraksts un paragrāfi */
 .main_h{
