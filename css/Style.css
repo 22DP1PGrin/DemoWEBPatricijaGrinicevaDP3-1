@@ -60,7 +60,7 @@ body{
   color: rgba(26, 16, 8, 0.8); /*Teksta krāsa */
   text-align: center; /* Centrējam tekstu */
   text-decoration: none; /* Noņemam noklusēto teksta apakšsvītrojumu */
-  margin-left: 10px; /* Atstarpes starp saitēm */
+  margin-left: 17px; /* Atstarpes starp saitēm */
   font-size: 17px; /* Fonta izmērs navigācijas tekstam */
 }
 
@@ -68,7 +68,7 @@ body{
   color: rgba(26, 16, 8, 0.8); /*Teksta krāsa */
   text-align: center; /* Centrējam tekstu */
   text-decoration: none; /* Noņemam noklusēto teksta apakšsvītrojumu */
-  margin-left: 10px; /* Atstarpes starp saitēm */
+  margin-left: 17px; /* Atstarpes starp saitēm */
   display: inline-block; /* Rindas bloks, lai pareizi rādītu atstarpi */
   justify-content: left; /* Teksta novietošana pa kreisi */
   font-size: 17px; /* Fonta izmērs navigācijas tekstam */
@@ -288,4 +288,14 @@ footer {
 .footer-links a:hover {
     color: rgba(241, 189, 141, 0.8); /* Teksta krāsa saitēm, kad pele tiek pārvilkta */
     transform: scale(1.2); /* Saites mērogošana uz augšu, kad pele ir virs tām */
+}
+
+/* AboutUs */
+
+.activeAbout{
+  color:rgba(20, 13, 7, 0.8);
+  font-size: 20px;
+  text-align: center;
+  margin-left:100px ;
+  margin-right:100px ;
 }
