@@ -102,7 +102,7 @@ body{
 
 .main_paragraph{
   text-align: center; /* Centrējam tekstu */
-  font-size: 22px; /* Iestatām fonta izmēru paragrāfam */
+  font-size: 24px; /* Iestatām fonta izmēru paragrāfam */
   color: rgba(26, 16, 8, 0.8); /* Teksta krāsa */
   animation: gradientText 4s ease-in-out infinite; /* Gradienta teksta animācija */
 }
@@ -299,29 +299,28 @@ footer {
 }
 
 /* AboutUs */
-
-.activeAbout{
-  color:rgba(20, 13, 7, 0.8);
-  font-size: 20px;
-  text-align: center;
-  margin-left:100px;
-  margin-right:100px;
-  position: relative;
-
+.activeOther {
+  color: rgba(20, 13, 7, 0.8); /* Iestata teksta krāsu ar caurspīdīgumu */
+  font-size: 22px; /* Iestata teksta izmēru */
+  text-align: center; /* Centrē tekstu */
+  margin-left: 100px; /* Piešķir kreiso malu */
+  margin-right: 100px; /* Piešķir labo malu */
+  position: relative; /* Relatīvais pozicionējums elementam */
 }
+
 @media (max-width: 550px) {
-  .activeAbout{
-  margin-left:auto;
-  margin-right:auto;
+  .activeOther {
+    margin-left: auto; /* Pārslēdz kreiso malu uz automātisku, lai centrētu mazākos ekrānos */
+    margin-right: auto; /* Pārslēdz labo malu uz automātisku, lai centrētu mazākos ekrānos */
   }
 }
-.linksFunct{
-  text-decoration: none;
-  color: #c58667;
 
+/* Functionality */
+.linksFunct {
+  text-decoration: none; /* Noņem teksta dekorāciju (piemēram, pasvītrojumu) */
+  color: #c58667; /* Iestata saites krāsu */
 }
 
-.linksFunct:hover{
-  color: rgba(20, 13, 7, 0.8);
-  
+.linksFunct:hover {
+  color: rgba(20, 13, 7, 0.8); /* Maina saites krāsu pie peles uzveduma */
 }
