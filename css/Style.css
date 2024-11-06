@@ -7,6 +7,10 @@ body{
   background:url(../Image/back.jpg); /* Iestatām fona attēlu */
   margin:0; /* Noņemam noklusēto malu */
 }
+.Contact{
+  background:url(../Image/ground.png); /* Iestatām fona attēlu */
+  margin:0; /* Noņemam noklusēto malu */
+}
 
 /* Dzeš attelus kād ekrana izmers <= 500 */
 @media (max-width: 500px) {
@@ -313,6 +317,10 @@ footer {
     margin-left: auto; /* Pārslēdz kreiso malu uz automātisku, lai centrētu mazākos ekrānos */
     margin-right: auto; /* Pārslēdz labo malu uz automātisku, lai centrētu mazākos ekrānos */
   }
+  .activeOtherAnimatic{
+    margin-left: auto; /* Pārslēdz kreiso malu uz automātisku, lai centrētu mazākos ekrānos */
+    margin-right: auto; /* Pārslēdz labo malu uz automātisku, lai centrētu mazākos ekrānos */
+  }
 }
 
 /* Functionality */
@@ -323,4 +331,13 @@ footer {
 
 .linksFunct:hover {
   color: rgba(20, 13, 7, 0.8); /* Maina saites krāsu pie peles uzveduma */
+}
+.activeOtherAnimatic{
+  color: rgba(20, 13, 7, 0.8); /* Iestata teksta krāsu ar caurspīdīgumu */
+  font-size: 22px; /* Iestata teksta izmēru */
+  text-align: center; /* Centrē tekstu */
+  margin-left: 100px; /* Piešķir kreiso malu */
+  margin-right: 100px; /* Piešķir labo malu */
+  position: relative; /* Relatīvais pozicionējums elementam */
+  animation: gradientText 4s ease-in-out infinite; 
 }
