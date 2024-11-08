@@ -1,12 +1,15 @@
+/* Body elements */
 body{
   background:url(../Image/background.jpg); /* Iestatām fona attēlu */
   margin:0; /* Noņemam noklusēto malu */
 
 }
+
 .Other{
   background:url(../Image/back.jpg); /* Iestatām fona attēlu */
   margin:0; /* Noņemam noklusēto malu */
 }
+
 .Contact{
   background:url(../Image/ground.png); /* Iestatām fona attēlu */
   margin:0; /* Noņemam noklusēto malu */
@@ -18,6 +21,7 @@ body{
    display: none !important; /* Inore citus noteikumus */
   }
 }
+
 /* Navigācijas josla */
 .navigation-bar{
   display: flex; /* Flexbox izkārtojums navigācijai */
@@ -72,6 +76,7 @@ body{
   font-size: 17px; /* Fonta izmērs navigācijas tekstam */
   cursor: pointer;
 }
+
 .activeother{
   .context-menu {cursor: context-menu;}
 }
@@ -95,7 +100,6 @@ body{
   color: rgba(241, 189, 141, 0.8); /* Teksta krāsa, kad pele tiek pārvilkta */
   transform: scale(1.2); /* Saites mērogošana uz augšu, kad pele ir virs tām */
 }
-
 
 /* Galvenais virsraksts un paragrāfi */
 .main_h{
@@ -189,7 +193,7 @@ aside {
 }
 
 /* Kartes */
-.hGrid{
+.header{
   color:rgba(26, 16, 8, 0.8); /* Teksta krāsa */
   text-align: center; /* Teksta centrēšana */
 }
@@ -269,8 +273,8 @@ footer {
     text-align: center; /* Teksta centrēšana */
     background-image: linear-gradient(#f5b89a,#c58667,#704733); /* Fona attēla gradienta iestatījums */
     justify-content: space-around; /* Telpas starp sadaļām */
-    padding: 15px; /* Atstarpe ap konteineru */
-    max-width: 100%;
+    padding: 25px; /* Atstarpe ap konteineru */
+    max-width: 100%; /* Veido maksimalo garums */
 }
 
 .footer-container {
@@ -317,10 +321,6 @@ footer {
     margin-left: auto; /* Pārslēdz kreiso malu uz automātisku, lai centrētu mazākos ekrānos */
     margin-right: auto; /* Pārslēdz labo malu uz automātisku, lai centrētu mazākos ekrānos */
   }
-  .activeOtherAnimatic{
-    margin-left: auto; /* Pārslēdz kreiso malu uz automātisku, lai centrētu mazākos ekrānos */
-    margin-right: auto; /* Pārslēdz labo malu uz automātisku, lai centrētu mazākos ekrānos */
-  }
 }
 
 /* Functionality */
@@ -332,12 +332,31 @@ footer {
 .linksFunct:hover {
   color: rgba(20, 13, 7, 0.8); /* Maina saites krāsu pie peles uzveduma */
 }
+
+/* Contact */
 .activeOtherAnimatic{
   color: rgba(20, 13, 7, 0.8); /* Iestata teksta krāsu ar caurspīdīgumu */
   font-size: 22px; /* Iestata teksta izmēru */
   text-align: center; /* Centrē tekstu */
-  margin-left: 100px; /* Piešķir kreiso malu */
-  margin-right: 100px; /* Piešķir labo malu */
   position: relative; /* Relatīvais pozicionējums elementam */
-  animation: gradientText 4s ease-in-out infinite; 
+  animation: gradientText 4s ease-in-out infinite; /* Gradienta teksta animācija */
+}
+
+/* Rules */
+.list-rules {
+  display: flex; /* Izmantojam flexbox, lai izvietotu sarakstus vienā rindā */
+  justify-content: center; /* Centrējam sarakstus */
+  margin-top: 10px; /* Atstarpe virs saraksta */
+}
+
+.rules {
+  list-style-type: none; /* Uzdodam, lai nav saraksta marķējuma */
+  padding: 0; /* Uzdodam, lai nebūtu iekšējā atstarpes */
+  margin: 0 10px; /* Atstarpe starp sarakstiem */
+}
+
+.rules li {
+  color: rgba(20, 13, 7, 0.8);
+  margin: 60px 0; /* Atstarpe starp saraksta elementiem */
+  font-size: 21px; /* Fonta izmērs saraksta elementiem */
 }
